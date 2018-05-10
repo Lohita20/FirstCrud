@@ -29,7 +29,7 @@
 
         <div class="form-group">
           <label>Brand</label>
-          <select ng-model="product.brand" class="form-control" placeholder="Brand" required>
+          <select ng-model="product.brand" class="form-control" required>
             <option value="">Brand</option>
             <option value="Puma">Puma</option>
             <option value="Nike">Nike</option>
@@ -57,8 +57,8 @@
           <input type="url" class="form-control" ng-model="product.buy_url" placeholder="Buy URL" required>
         </div>
 
-      <center>  <button target="#/products" type="submit" class="btn btn-default">Submit</button> </center>
-
+      <center>  <button target="#/view" type="submit" class="btn btn-default">Submit</button>
+                <button target="#/view" type="cancel" class="btn btn-default">Cancel</button>  </center>
       </form>
     </div>
     </div>

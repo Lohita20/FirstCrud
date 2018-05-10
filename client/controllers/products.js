@@ -19,20 +19,20 @@ myApp.controller('ProductsController', ['$scope', '$http', '$location', '$routeP
 	$scope.addProduct = function(){
 		console.log($scope.product);
 		$http.post('/api/products/', $scope.product).success(function(response){
-			window.location.href='#/products';
+			window.location.href='#/products/view';
 		});
 	}
 
 	$scope.updateProduct = function(){
 		var id = $routeParams.id;
 		$http.put('/api/products/'+id, $scope.product).success(function(response){
-			window.location.href='#/products';
+			window.location.href='#/products/view';
 		});
 	}
 
 	$scope.removeProduct = function(id){
 		$http.delete('/api/products/'+id).success(function(response){
-			window.location.href='#/products';
+			window.location.href='#/products/view';
 		});
 	}
 }]);
